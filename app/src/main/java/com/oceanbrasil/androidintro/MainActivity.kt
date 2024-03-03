@@ -1,11 +1,13 @@
 package com.oceanbrasil.androidintro
 
-import androidx.appcompat.app.AppCompatActivity
+import android.media.AudioManager
+import android.media.ToneGenerator
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +18,13 @@ class MainActivity : AppCompatActivity() {
         val etNome = findViewById<EditText>(R.id.editTextNome)
         val btOK = findViewById<Button>(R.id.button2)
         btOK.setOnClickListener {
-            tvResultado.text = etNome.text
+            if (etNome.text.isBlank()) {
+                val tg = ToneGenerator(AudioManager.STREAM_MUSIC, 100)
+                tg.startTone(ToneGenerator.TONE_CDMA_PIP, 150)
+                etNome.error = "Digite um nome válido!"
+            } else {
+                tvResultado.text = etNome.text
+            }
         }
     }
 }
