@@ -3,6 +3,7 @@ package com.oceanbrasil.androidintro
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
@@ -11,14 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tvTexto = findViewById<TextView>(R.id.texto)
-
-
-        val botao = findViewById<Button>(R.id.button2)
-        botao.setText("Ola!")
-        botao.setOnClickListener {
-            tvTexto.setText("outra coisa")
-            Toast.makeText(this,"clicou...",Toast.LENGTH_SHORT).show()
+        val tvResultado = findViewById<TextView>(R.id.texto)
+        val etNome = findViewById<EditText>(R.id.editTextNome)
+        val btOK = findViewById<Button>(R.id.button2)
+        btOK.setOnClickListener {
+            tvResultado.text = etNome.text
         }
     }
 }
