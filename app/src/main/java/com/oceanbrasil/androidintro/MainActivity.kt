@@ -1,5 +1,6 @@
 package com.oceanbrasil.androidintro
 
+import android.content.Intent
 import android.media.AudioManager
 import android.media.ToneGenerator
 import android.os.Bundle
@@ -17,13 +18,17 @@ class MainActivity : AppCompatActivity() {
         val tvResultado = findViewById<TextView>(R.id.texto)
         val etNome = findViewById<EditText>(R.id.editTextNome)
         val btOK = findViewById<Button>(R.id.button2)
+
+        val novaTelaIntent = Intent(this, ResultadoActivity::class.java)
         btOK.setOnClickListener {
             if (etNome.text.isBlank()) {
                 val tg = ToneGenerator(AudioManager.STREAM_MUSIC, 100)
                 tg.startTone(ToneGenerator.TONE_CDMA_PIP, 150)
                 etNome.error = "Digite um nome válido!"
             } else {
-                tvResultado.text = etNome.text
+                // tvResultado.text = etNome.text
+                novaTelaIntent.putExtra("NOME_DIGITADO", etNome.text.toString())
+                startActivity(novaTelaIntent)
             }
         }
     }
