@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Intro</string>
+    <string name="title_activity_treasure_hunt">TreasureHuntActivity</string>
 </resources>

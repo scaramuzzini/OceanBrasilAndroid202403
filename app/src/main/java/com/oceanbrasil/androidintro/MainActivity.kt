@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -31,5 +32,21 @@ class MainActivity : AppCompatActivity() {
                 startActivity(novaTelaIntent)
             }
         }
+
+        val btAbrirJogo = findViewById<Button>(R.id.btAbrirJogo)
+        btAbrirJogo.setOnClickListener {
+            // Abir a tela do jogo
+            val jogoIntent = Intent(this, JogoDaVelhaActivity::class.java)
+            startActivity(jogoIntent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        showToast("onStart() foi chamado")
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
