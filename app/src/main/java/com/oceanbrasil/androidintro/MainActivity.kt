@@ -39,6 +39,12 @@ class MainActivity : AppCompatActivity() {
             val jogoIntent = Intent(this, JogoDaVelhaActivity::class.java)
             startActivity(jogoIntent)
         }
+
+        val btAbrirMapa = findViewById<Button>(R.id.btAbrirMapa)
+        btAbrirMapa.setOnClickListener {
+            val mapaIntent = Intent(this, MapsActivity::class.java)
+            startActivity(mapaIntent)
+        }
     }
 
     override fun onResume() {

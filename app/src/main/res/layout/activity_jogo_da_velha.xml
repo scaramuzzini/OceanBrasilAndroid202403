@@ -5,18 +5,26 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20px"
         android:orientation="vertical"
         android:gravity="center"
         tools:context=".JogoDaVelhaActivity"
         >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/ocean" />
+
         <TextView
             android:id="@+id/instrucoes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vez do jogador 1"/>
+            android:text="Vez do jogador 1"
+            android:textSize="36sp"
+            android:gravity="center"
+            />
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -100,10 +108,14 @@
                 ></Button>
 
         </GridLayout>
-        <Button
-            android:id="@+id/btReset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reiniciar jogo"/>
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar jogo"
+        android:theme="@style/CoolRoundedButton" />
+
+
 
 </LinearLayout>

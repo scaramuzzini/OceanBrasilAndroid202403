@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CoolRoundedButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#000000</item> <!-- Use primary color from theme -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Use text color on primary from theme -->
+        <item name="cornerRadius">16dp</item> <!-- Adjust corner radius for rounded edges -->
+    </style>
+</resources>

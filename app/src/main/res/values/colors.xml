@@ -3,4 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cinza">#6C6C67</color>
+    <color name="cool_primary">#2196F3</color> <!-- Blue -->
+    <color name="cool_primary_variant">#1976D2</color> <!-- Darker blue -->
+    <color name="cool_secondary">#26C6DA</color> <!-- Light blue -->
+    <color name="cool_background">#E0F7FA</color> <!-- Very light blue -->
+    <color name="cool_surface">#FFFFFF</color> <!-- White -->
+    <color name="cool_on_primary">#FFFFFF</color> <!-- White text on primary color -->
+    <color name="cool_on_secondary">#000000</color> <!-- Black text on secondary color -->
+    <color name="cool_on_background">#000000</color> <!-- Black text on background color -->
+    <color name="cool_on_surface">#000000</color> <!-- Black text on surface color -->
 </resources>

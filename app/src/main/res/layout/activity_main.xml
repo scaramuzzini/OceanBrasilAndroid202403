@@ -53,4 +53,15 @@
         android:layout_margin="10dp"
         />
 
+    <Button
+        android:id="@+id/btAbrirMapa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Abrir mapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAbrirJogo"
+        android:layout_margin="10dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

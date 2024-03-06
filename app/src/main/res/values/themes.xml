@@ -3,6 +3,15 @@
     <style name="Base.Theme.AndroidIntro" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/cool_primary</item>
+        <item name="colorPrimaryVariant">@color/cool_primary_variant</item>
+        <item name="colorSecondary">@color/cool_secondary</item>
+        <item name="android:colorBackground">@color/cool_background</item>
+        <item name="colorSurface">@color/cool_surface</item>
+        <item name="colorOnPrimary">@color/cool_on_primary</item>
+        <item name="colorOnSecondary">@color/cool_on_secondary</item>
+        <item name="colorOnBackground">@color/cool_on_background</item>
+        <item name="colorOnSurface">@color/cool_on_surface</item>
     </style>
 
     <style name="Theme.AndroidIntro" parent="Base.Theme.AndroidIntro" />

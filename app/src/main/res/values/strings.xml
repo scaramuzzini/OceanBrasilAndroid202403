@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Android Intro</string>
-    <string name="title_activity_treasure_hunt">TreasureHuntActivity</string>
+    <string name="app_name">Ocean APPS</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
